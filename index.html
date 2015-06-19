@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+	<body>
+		<ul id="cat-list"></ul>
+		<div id="cat-details">
+<!-- 			<div id="cat-name"></div>
+			<img id="cat-img"></img>
+			<div id="cat-clicks"></div> -->
+		</div>
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/template" data-template="cat-list">
+        <li class="cat" data-id="{{id}}" data-name="{{name}}">
+            {{id}} - {{name}}
+        </li>
+    </script>
+    <script type="text/template" data-template="cat-details">
+		<div data-id="{{name}}">{{name}}</div>
+		<img data-id="{{id}}" data-img="{{img}}" src={{img}}></img>
+		<div data-id="{{clicks}}">{{clicks}}</div>
+    </script>
+	<script type="text/javascript" src="cat.js"></script>
+	<script type="text/javascript">
+	</script>
+</html>
